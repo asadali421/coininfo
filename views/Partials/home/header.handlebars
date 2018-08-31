@@ -1,0 +1,101 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary top-nav">
+    <div class="container">
+        <a href="/">  <img src="/logo.png"  class="coininfo_logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul style="margin-left:30px!important;" class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/listing">ICOS{{ ni }}</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/advertisment">Advertisment{{ ni }}</a>
+                </li>
+            </ul>
+
+
+            <div class="search-container">
+
+                <form action="/coin" method="GET" class="searchbox">
+                    <input type="text" placeholder="Search..." name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                    <button class="searchbox-submit">
+                        <i class="material-icons md-30"><i class="fas fa-search"></i></i>
+                    </button>
+
+                    <span class="searchbox-icon">
+                          <i class="material-icons md-30"><i class="fas fa-search"></i></i>
+                        </span>
+
+                </form>
+
+
+            </div>
+
+
+
+
+
+
+            <span class="btn" style="margin-right: 5px">
+                  <a href="/login"> <i class="fas fa-user"></i> </a>
+                    </span>
+            <button class="btn btn-outline-light my-2 my-sm-0 publish-ico" type="submit">PUBLISH ICO</button>
+
+
+        </div>
+    </div>
+</nav>
+<script>
+
+    $(document).ready(function() {
+        var submitIcon = $('.searchbox-icon');
+        var inputBox = $('.searchbox-input');
+        var searchBox = $('.searchbox');
+        var isOpen = false;
+        submitIcon.click(function() {
+            if (isOpen == false) {
+                searchBox.addClass('searchbox-open');
+                inputBox.focus();
+                isOpen = true;
+            } else {
+                searchBox.removeClass('searchbox-open');
+                inputBox.focusout();
+                isOpen = false;
+            }
+        });
+        submitIcon.mouseup(function() {
+            return false;
+        });
+        searchBox.mouseup(function() {
+            return false;
+        });
+        $(document).mouseup(function() {
+            if (isOpen == true) {
+                $('.searchbox-icon').css('display', 'block');
+                submitIcon.click();
+            }
+        });
+    });
+
+    function buttonUp() {
+        var inputVal = $('.searchbox-input').val();
+        inputVal = $.trim(inputVal).length;
+        if (inputVal !== 0) {
+            $('.searchbox-icon').css('display', 'none');
+        } else {
+            $('.searchbox-input').val('');
+            $('.searchbox-icon').css('display', 'block');
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+</script>

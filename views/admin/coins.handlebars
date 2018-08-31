@@ -1,0 +1,52 @@
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>title</th>
+        <th>Photo</th>
+        <th>price</th>
+        <th>about</th>
+        <th>country</th>
+        <th>author</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each coins}}
+        <tr>
+            <td>
+                {{title}}
+            </td>
+            <td>
+                <img src="/images/{{symbolimg}}" height="30px">
+            </td>
+
+            <td>
+                {{price}}
+            </td>
+            <td>
+                {{about}}
+            </td>
+            <td>
+                {{country}}
+            </td>
+            <td>
+                {{author}}
+            </td>
+
+            <td>
+                <a href="/admin/edit/{{id}}" class="btn btn-info"> Edit</a>
+
+            </td>
+
+            <td>
+                <form action="/admin/coins/{{id}}?_method=DELETE" method="post">
+                    <button type="submit" class="btn-danger">Delete</button>
+                </form>
+            </td>
+
+
+        </tr>
+    {{/each}}
+    </tbody>
+
+</table>

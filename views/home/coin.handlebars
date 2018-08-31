@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+    <link href="stylesheets/coin.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+<!--TOP-NAVBAR-->
+{{> home/header}}
+
+
+<!--END-TOP-NAVBAR-->
+{{#if coin}}
+
+        <div class="alert alert-danger container">
+            {{coin}}
+        </div>
+
+
+{{/if}}
+<!--ICO-CONTENT-->
+{{#if title}}
+<div class="ico-content">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-8 first_col">
+                <div class="coin-icon-wrapper">
+                    <div class="row">
+                        <div class="col-sm-12 coin-heading">
+
+                            <ul class="list-inline second_ul">
+                                <li class="list-inline-item align-middle"><img class="coin-logo" src=/{{symbolimg }} > </li>
+                                <li class="list-inline-item coin-info align-middle">
+                                    <h3>{{ title }}</h3>
+                                    <h4>{{ country }}</h4>
+                                    <h6>{{ price }} </h6></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 second_col">
+
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <a id="website_btn" href={{website }}><i style="margin-left:3px;" class="fas fa-link"></i>&nbsp&nbspWEBSITE</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a id="whitepaper_btn" href={{ whitepaper }}><i class="far fa-file-alt"></i>&nbsp&nbspWHITEPAPER</a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"></li>
+                            <li class="list-inline-item"></li>
+                            <li class="list-inline-item"></li>
+                            <li class="list-inline-item"></li>
+                            <ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--ICO-MIDDLE-CONTENT-->
+
+    <div class="container">
+        <div class="row">
+            <div class='col-sm-8 third_col'>
+                <nav class="navbar navbar-expand-lg second_nav">
+                    <div class="collapse navbar-collapse" id="navbarColor02">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team">TEAM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#roadmap">ROADMAP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#finance">FINANCE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href={{whitepaper}}>WHITE PAPER</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="container">
+
+                    <!--ABOUT ICO HEADING AND PARA-->
+                    <div class="row">
+                        <div id="about" class="col-sm-12 about_section">
+                            <p class="about_ico_heading">About the ICO</p>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <p class="about_ico_para">
+                                {{ about }}
+                            </p>
+                        </div>
+                        <hr class="hr_about_section">
+                    </div>
+                    <!--END ICO HEADIBNG AND PARA-->
+
+                    <!--TEAM MEMBER SECTION-->
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div id="team" class="col-sm-12 members_section">
+                                <p class="members_heading">Team Members</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                        {{#each team}}
+
+
+                            <div class="col-sm-4  about_section_member">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><img class="member_img" src=/{{image}}></li>
+                                    <li class="list-inline-item member_name">
+
+                                        {{name}}
+                                    </li>
+                                    <li class="list-inline-item member_name"></li>
+                                    <li class="list-inline-item"></li>
+                                </ul>
+                            </div>
+
+                        {{/each}}
+
+                        </div>
+
+                    </div>
+                    <!--END-TEAM MEMBER SECTION-->
+
+                </div>
+                <hr class="about_ico_section">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div id="roadmap" class="col-sm-12">
+                            <p class="roadmap_heading">Roadmap</p>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="timeline">
+
+                    {{#each roadmap}}
+                        <div class="con right">
+                            <div class="content">
+                                {{date }}
+                                <br>
+                                {{about }}
+                            </div>
+                        </div>
+
+                    {{/each}}
+
+
+
+                    </div>
+
+                </div>
+
+                <hr class="about_ico_section">
+
+
+                <div class="col-sm-12">
+                    <div class="container">
+                        <div id="finance" class="row">
+                            <p class="roadmap_heading">Financial information</p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div  style="background-color: #F7F8F9;height:48px;text-align:center;padding:10px;color:#1B1D1F;font-size:18px;font-weight:900;" class="token-info">
+                                    <p>TOKEN INFO</p>
+                                </div>
+                                <br>
+                                <p><strong>Token</strong>&nbsp&nbsp {{token}}</p>
+                                <hr>
+
+                                <p><strong>Platform</strong>&nbsp&nbsp{{platform}}</p>
+                                <hr>
+
+                                <p><strong>Type</strong>&nbsp&nbsp{{type}}</p>
+                                <hr>
+
+                                <p><strong>Price in ICO</strong>&nbsp&nbsp{{priceinico}}</p>
+                                <hr>
+
+                                <p><strong>Private-pre-sale</strong>&nbsp&nbsp{{privatepresale}}</p>
+                                <hr>
+
+                                <p><strong>Public-pre-sale</strong>&nbsp&nbsp{{publicpresale}}</p>
+                                <hr>
+
+                                <p><strong>Main sale</strong>&nbsp&nbsp{{mainsale}}</p>
+                                <hr>
+
+                                <p><strong>Tokens for sale</strong>&nbsp&nbsp{{tokensforsale}}</p>
+                            </div>
+
+
+
+
+                            <div class="col-sm-6">
+                                <div style="background-color: #F7F8F9;height:48px;text-align:center;padding:10px;color:#1B1D1F;font-size:18px;font-weight:900;" class="token-info">
+                                    <p>INVESTEMENT INFO</p>
+                                </div>
+                                <br>
+                                <p><strong>Min. investement</strong>&nbsp&nbsp{{mininvestement}}</p>
+                                <hr>
+
+                                <p><strong>Accepting</strong>&nbsp&nbsp{{accepting}}</p>
+                                <hr>
+
+                                <p><strong>Distributed in ICO</strong>&nbsp&nbsp{{distributedinico}}</p>
+                                <hr>
+
+                                <p><strong>soft cap</strong>&nbsp&nbsp{{softcap}}</p>
+                                <hr>
+
+                                <p><strong>Hard cap</strong>&nbsp&nbsp{{hardcap}}</p>
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class='col-sm-4 fourth_col'>
+
+                <iframe width='98%' height='200' src="{{ videourl }}" frameborder="0">
+                </iframe>
+
+                <div class="ico_sale">
+                    <ul class="list-inline third_ul">
+                        <li class="list-inline-item list_item_sale_heading"><img style="width:19px;height:19px;" src="/presale.png">&nbsp&nbspPre Sale</li>
+                        <li class="list-inline-item list_item_sale">
+                            {{ presale }}
+                        </li>
+                    </ul>
+
+                    <ul class="list-inline third_ul">
+                        <li class="list-inline-item list_item_sale_heading"><img style="width:19px;height:19px;" src="/icosale.png">&nbsp&nbspICO Sale</li>
+                        <li class="list-inline-item  list_item_sale">
+                            {{ icosale }}
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="hr_sale_section">
+
+                <button class="btn_update_ico">UPDATE ICO</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--END-ICO-MIDDLE-CONTENT-->
+
+
+    <div class="container">
+        <div style="height:50px;"></div>
+        <div class="row">
+            <p style="color:#0071BC;font-size:12px;">RELATED ICOS</p>
+
+        </div>
+        <div class="row">
+            <p style="color:#1B1D1F;font-size:30px;">You might also be interested in</p>
+
+        </div>
+
+
+
+
+        <div class="row">
+
+            <div class="col-sm-4 con-related">
+                <ul class="related">
+                    <li><img src="/swace.png">&nbsp&nbsp</li>
+                    <li><strong style="color:#0071BC;">Swace</strong><br>Lithuania</li>
+                    &nbsp&nbsp
+                    <li style="background-color:#EAEDF8;margin-left:13px;color:#FFFFFF;font-size:11px;border-radius:3px;padding:3px;">SWA</li>
+
+                </ul>
+
+                <br>
+                <br>
+                <hr>
+                <p style="font-size:14px;color:#ADB2C4;">{{about}}<p>
+            </div>
+
+
+
+
+
+
+            <div class="col-sm-4 con-related">
+                <ul class="related">
+                    <li><img src="/swace.png">&nbsp&nbsp</li>
+                    <li><strong style="color:#0071BC;">Swace</strong><br>Lithuania</li>
+                    &nbsp&nbsp
+                    <li style="background-color:#EAEDF8;margin-left:13px;color:#FFFFFF;font-size:11px;border-radius:3px;padding:3px;">SWA</li>
+
+                </ul>
+
+                <br>
+                <br>
+                <hr>
+                <p style="font-size:14px;color:#ADB2C4;">{{about}}<p>
+            </div>
+
+
+
+
+
+            <div class="col-sm-4 con-related">
+                <ul class="related">
+                    <li><img src="/swace.png">&nbsp&nbsp</li>
+                    <li><strong style="color:#0071BC;">Swace</strong><br>Lithuania</li>
+                    &nbsp&nbsp
+                    <li style="background-color:#EAEDF8;margin-left:13px;color:#FFFFFF;font-size:11px;border-radius:3px;padding:3px;">SWA</li>
+
+                </ul>
+
+                <br>
+                <br>
+                <hr>
+                <p style="font-size:14px;color:#ADB2C4;">{{about}}<p>
+            </div>
+
+
+        </div>
+
+
+        <div style="height:50px;"></div>
+
+    </div>
+
+
+</div>
+{{/if}}
+<div style="height:50px;"></div>
+
+{{> home/footer}}
+<!--END-ICO-CONTENT-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<footer>
+</footer>
+
+</html>

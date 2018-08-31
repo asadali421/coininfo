@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+
+    <div class="container col-md-3 col-md-offset-3" style="margin-top: 50px">
+        <img id="logo" src="/logo.png" style="width: 220px">
+
+
+</div>
+
+<div class="col-sm-12">
+
+
+
+    <div class="container">
+
+
+        <form enctype="multipart/form-data" accept="image/gif,image/jpeg/image/png" id="form" style="width:500px;margin:100px auto;" class="form-signin" method="POST" action="/admin/coins/create" >
+
+
+            <div class="form-group">
+                <label for="symbolimg"> Upload Picture:</label>
+                <input id="symbolimg" name="symbolimg" type="file" accept="image/*" class="form-control" placeholder="symbolimg">
+
+            </div>
+            <div class="form-group">
+
+                 <label  for="title">Enter Title:</label>
+            <input name="title" type="text" id="title" class="form-control" placeholder="title" required>
+            </div>
+
+
+            <div class="form-group">
+
+                <label  for="website">Enter Website:</label>
+            <input name="website" type="text" id="website" class="form-control" placeholder="website" required="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="whitepaper">Enter Whitepaper:</label>
+            <input name="whitepaper" type="text" id="whitepaper" class="form-control" placeholder="whitepaper" required="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="author">Enter Author:</label>
+
+            <input name="author" type="text" id="author" class="form-control" placeholder="author" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="country">Enter Country:</label>
+            <input name="country" type="text" id="country" class="form-control" placeholder="country" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="price">Enter Price:</label>
+            <input name="price" type="text" id="price" class="form-control" placeholder="price" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="about">Enter About:</label>
+            <textarea name="about" type="text" id="about" class="form-control" placeholder="about" required="" autofocus=""></textarea>
+            </div>
+
+            <div class="form-group">
+
+                <label  for="videourl">Enter Video URL:</label>
+            <input name="videourl" type="text" id="videourl" class="form-control" placeholder="video url" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="icosale">Enter ICO Scale:</label>
+            <input name="icosale" type="text" id="icosale" class="form-control" placeholder="icosale" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="presale">Enter PreScale:</label>
+            <input name="presale" type="text" id="presale" class="form-control" placeholder="presale" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="token">Enter Token:</label>
+            <input name="token" type="text" id="token" class="form-control" placeholder="token" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="platform">Enter Platform:</label>
+            <input name="platform" type="text" id="platform" class="form-control" placeholder="platform" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="type">Enter Type:</label>
+            <input name="type" type="text" id="type" class="form-control" placeholder="type" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="priceinico">Enter Price In ICO:</label>
+            <input name="priceinico" type="text" id="priceinico" class="form-control" placeholder="price in ico" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="privatepresale">Enter Private Pre Sale:</label>
+            <input name="privatepresale" type="text" id="privatepresale" class="form-control" placeholder="private pre sale" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="minsale">Enter Minsale:</label>
+            <input name="mainsale" type="text" id="mainsale" class="form-control" placeholder="mainsale" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="tokensforsale">Enter Token For Sale:</label>
+            <input name="tokensforsale" type="text" id="tokensforsale" class="form-control" placeholder="tokens for sale" required="" autofocus="">
+            </div>
+            <div class="form-group">
+
+                <label  for="mininvestement">Enter Mini Investment:</label>
+            <input name="mininvestement" type="text" id="mininvestement" class="form-control" placeholder="min investement" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="accepting">Enter Accepting:</label>
+            <input name="accepting" type="text" id="accepting" class="form-control" placeholder="Accepting" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="distributedinico">Enter Distributed In ICO:</label>
+            <input name="distributedinico" type="text" id="distributedinico" class="form-control" placeholder="distributed in ico" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="softcap">Enter Softcap:</label>
+            <input name="softcap" type="text" id="softcap" class="form-control" placeholder="Soft Cap" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="hardcap">Enter Hardcap:</label>
+
+            <input name="hardcap" type="text" id="hardcap" class="form-control" placeholder="Hard Cap" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="publicpresale">Enter Public Pre Sale:</label>
+            <input name="publicpresale" type="text" id="publicpresale" class="form-control" placeholder="Public Pre Sale" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="category">Select Category:</label>
+            <select type="select" name="category" id="category" class="form-control" >
+
+
+                <option value="top" > Top </option>
+                <option value="pre" > Pre </option>
+                <option value="active" > Active </option>
+                <option value="upcoming" > Upcoming </option>
+                <option value="past" > Past </option>
+                <option value="airdrops" > Airdrops </option>
+                <option value="topcrypto" > Top Crypto </option>
+
+            </select>
+            </div>
+            <div id="box">
+
+            </div>
+
+            <div id="con">
+
+            </div>
+
+            <center>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block" id="submit" type="submit">ADD ICO</button>
+            </center>
+        </form>
+    </div>
+
+    <script>
+        var form = document.getElementById('box');
+        var box = document.createElement('div');
+        box.id = "team-box";
+        var input = document.createElement('input');
+        input.name = "name";
+        input.classList.add("form-control");
+        input.placeholder = "Team name";
+        var input1 = document.createElement('input');
+        input1.setAttribute("type", "file");
+        input1.name = "image";
+        var label = document.createElement('label');
+        label.innerText = "Add Teams:";
+        label.classList.add("form-group")
+        input1.classList.add("form-control");
+        input1.placeholder = "Team image";
+        box.appendChild(label);
+        box.appendChild(input);
+        box.appendChild(input1);
+        form.appendChild(box);
+        var li = document.createElement('li');
+        li.innerHTML = "ADD MORE TEAM";
+        li.classList.add('btn-team');
+        li.id = "btn-team";
+        box.appendChild(li);
+
+        function createTeam() {
+            var form = document.getElementById('box');
+            var box = document.createElement('div');
+            var input = document.createElement('input');
+            input.name = "name";
+            input.classList.add("form-control");
+            input.placeholder = "Team name";
+            var input1 = document.createElement('input');
+            input1.setAttribute("type", "file");
+            input1.name = "image";
+            input1.classList.add("form-control");
+            input1.placeholder = "Team image";
+            box.appendChild(input);
+            box.appendChild(input1);
+            form.appendChild(box);
+        }
+
+        var link = document.getElementById('btn-team').addEventListener('click', () => {
+            createTeam();
+        });
+
+
+    </script>
+
+
+
+
+
+    <script>
+        var roadmap = document.getElementById('con');
+        var container = document.createElement('div');
+        container.id = "roadmap";
+        var field = document.createElement('input');
+        field.name = "date";
+        field.classList.add("form-control");
+        field.placeholder = "Date";
+        var field1 = document.createElement('textarea');
+        field1.name = "about";
+        field1.classList.add("form-control");
+        field1.placeholder = "about";
+        var label = document.createElement('label');
+        label.innerText = "Add Road Maps:";
+        container.appendChild(document.createElement('br'));
+        container.appendChild(label);
+        container.appendChild(field);
+        container.appendChild(field1);
+        roadmap.appendChild(container);
+        var button = document.createElement('li');
+        button.innerHTML = "ADD ROADMAP";
+        button.classList.add('btn-roadmap');
+        button.id = "btn-roadmap";
+        roadmap.appendChild(button);
+
+        function createMap() {
+            var roadmap = document.getElementById('con');
+            var container = document.createElement('div');
+            container.id = "roadmap";
+            var field = document.createElement('input');
+            field.name = "date";
+            field.classList.add("form-control");
+            field.placeholder = "Date";
+            var field1 = document.createElement('textarea');
+            field1.name = "about";
+            field1.classList.add("form-control");
+            field1.placeholder = "about";
+            container.appendChild(field);
+            container.appendChild(field1);
+            roadmap.appendChild(container);
+        }
+
+        document.getElementById('btn-roadmap').addEventListener('click', () => {
+            createMap();
+        });
+
+
+    </script>
+
+    <script>
+        var form = document.forms.namedItem("fileinfo");
+        document.getElementById('submit').addEventListener('click', function(ev) {
+
+            var oOutput = document.querySelector("div"),
+                    formData = new FormData(form);
+            formData.append('title', title);
+            formData.append('author', author);
+            formData.append('country', country);
+            formData.append('price', price);
+            formData.append('about', about);
+            formData.append('videourl', videourl);
+            formData.append('date', date);
+            formData.append('website', website);
+            formData.append('whitepaper', whitepaper);
+            formData.append('about', about);
+            formData.append('name', name);
+            formData.append('image', image);
+            formData.append('icosale', icosale);
+            formData.append('presale', presale);
+            formData.append('token', token);
+            formData.append('platform', platform);
+            formData.append('type', type);
+            formData.append('priceinico', priceinico);
+            formData.append('privatepresale', privatepresale);
+            formData.append('mainsale', mainsale);
+            formData.append('tokensforsale', tokensforsale);
+            formData.append('mininvestement', mininvestement);
+            formData.append('accepting', accepting);
+            formData.append('distributedinico', distributedinico);
+            formData.append('softcap', softcap);
+            formData.append('hardcap', hardcap);
+            formData.append('publicpresale', publicpresale);
+
+
+
+            var oReq = new XMLHttpRequest();
+            oReq.open("POST", "/ico/add", true);
+            oReq.onload = function(oEvent) {
+                console.log(oReq.status)
+                if (oReq.status == 200) {
+                    window.alert('data added')
+                    window.open('add_Ico');
+                } else {
+                    window.alert('data not added')
+                }
+            };
+
+            oReq.send(formData);
+            ev.preventDefault();
+        }, false);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

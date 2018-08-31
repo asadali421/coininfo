@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+
+<div class="container col-md-3 col-md-offset-3" style="margin-top: 50px">
+    <img id="logo" src="/logo.png" style="width: 220px">
+
+
+</div>
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                        .attr('src', e.target.result)
+                        .width(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+</script>
+
+
+<div class="col-sm-12">
+
+
+
+    <div class="container">
+
+
+        <form enctype="multipart/form-data" accept="image/gif,image/jpeg/image/png" id="form" style="width:500px;margin:100px auto;" class="form-signin" method="POST" action="/admin/edit/{{coin._id}}" >
+
+
+            <div class="form-group">
+                <img id="blah" width="200px" src="/{{coin.symbolimg}}" alt="your image">
+                <br>
+                <label for="symbolimg"> Update Picture:</label>
+                <input id="symbolimg" onchange="readURL(this);" name="symbolimg" type="file" accept="image/*" class="form-control" placeholder="symbolimg">
+
+
+            </div>
+            <div class="form-group">
+
+                <label  for="title">Enter Title:</label>
+                <input name="title" type="text" id="title" value="{{coin.title}}" class="form-control" placeholder="title" required>
+            </div>
+
+
+            <div class="form-group">
+
+                <label  for="website">Enter Website:</label>
+                <input name="website" type="text" id="website" value="{{coin.website}}" class="form-control" placeholder="website" required>
+            </div>
+
+            <div class="form-group">
+
+                <label  for="whitepaper">Enter Whitepaper:</label>
+                <input name="whitepaper" type="text" id="whitepaper" value="{{coin.whitepaper}}" class="form-control" placeholder="whitepaper" required>
+            </div>
+
+            <div class="form-group">
+
+                <label  for="author">Enter Author:</label>
+                <input name="author" type="text" id="author" class="form-control" value="{{coin.author}}" placeholder="author" required autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="country">Enter Country:</label>
+                <input name="country" type="text" id="country" class="form-control" value="{{coin.country}}" placeholder="country" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="price">Enter Price:</label>
+                <input name="price" type="text" id="price" class="form-control" value="{{coin.price}}" placeholder="price" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="about">Enter About:</label>
+                <textarea name="about" type="text" id="about" class="form-control" placeholder="about" required="" autofocus="">{{coin.about}}</textarea>
+            </div>
+
+            <div class="form-group">
+
+                <label  for="videourl">Enter Video URL:</label>
+                <input name="videourl" type="text" id="videourl" class="form-control" value="{{coin.videourl}}" placeholder="video url" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="icosale">Enter ICO Scale:</label>
+                <input name="icosale" type="text" id="icosale" class="form-control" value="{{coin.icosale}}" placeholder="icosale" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="presale">Enter PreScale:</label>
+                <input name="presale" type="text" id="presale" class="form-control" value="{{coin.presale}}" placeholder="presale" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="token">Enter Token:</label>
+                <input name="token" type="text" id="token" class="form-control" value="{{coin.token}}" placeholder="token" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="platform">Enter Platform:</label>
+                <input name="platform" type="text" id="platform" class="form-control" value="{{coin.platform}}" placeholder="platform" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="type">Enter Type:</label>
+                <input name="type" type="text" id="type" class="form-control" placeholder="type" value="{{coin.type}}" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="priceinico">Enter Price In ICO:</label>
+                <input name="priceinico" type="text" id="priceinico" class="form-control"  value="{{coin.priceinico}}" placeholder="price in ico" required autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="privatepresale">Enter Private Pre Sale:</label>
+                <input name="privatepresale" type="text" id="privatepresale" class="form-control" value="{{coin.privatepresale}}" placeholder="private pre sale" required autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="minsale">Enter Minsale:</label>
+                <input name="mainsale" type="text" id="mainsale" class="form-control" value="{{coin.mainsale}}" placeholder="mainsale" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="tokensforsale">Enter Token For Sale:</label>
+                <input name="tokensforsale" type="text" id="tokensforsale" class="form-control" value="{{coin.tokensforsale}}" placeholder="tokens for sale" required="" autofocus="">
+            </div>
+            <div class="form-group">
+
+                <label  for="mininvestement">Enter Mini Investment:</label>
+                <input name="mininvestement" type="text" id="mininvestement" class="form-control" value="{{coin.mininvestement}}" placeholder="min investement" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="accepting">Enter Accepting:</label>
+                <input name="accepting" type="text" id="accepting" class="form-control" value="{{coin.accepting}}" placeholder="Accepting" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="distributedinico">Enter Distributed In ICO:</label>
+                <input name="distributedinico" type="text" id="distributedinico" value="{{coin.distributedinico}}" class="form-control" placeholder="distributed in ico" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="softcap">Enter Softcap:</label>
+                <input name="softcap" type="text" id="softcap" class="form-control" value="{{coin.softcap}}" placeholder="Soft Cap" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="hardcap">Enter Hardcap:</label>
+
+                <input name="hardcap" type="text" id="hardcap" class="form-control" value="{{coin.hardcap}}" placeholder="Hard Cap" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="publicpresale">Enter Public Pre Sale:</label>
+                <input name="publicpresale" type="text" id="publicpresale" value="{{coin.publicpresale}}" class="form-control" placeholder="Public Pre Sale" required="" autofocus="">
+            </div>
+
+            <div class="form-group">
+
+                <label  for="category">Select Category:</label>
+                <select type="select" name="category" id="category" class="form-control" >
+
+
+                    <option value="top" > Top </option>
+                    <option value="pre" > Pre </option>
+                    <option value="active" > Active </option>
+                    <option value="upcoming" > Upcoming </option>
+                    <option value="past" > Past </option>
+                    <option value="airdrops" > Airdrops </option>
+                    <option value="topcrypto" > Top Crypto </option>
+
+                </select>
+            </div>
+
+
+            <center>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block" id="submit" type="submit">Update ICO</button>
+            </center>
+        </form>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

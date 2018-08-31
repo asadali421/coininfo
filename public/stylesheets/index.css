@@ -1,0 +1,74 @@
+
+
+a,h1,h2,h3,h4,h5,h6,p,button{font-family: 'Lato', sans-serif!important;}
+
+
+body {
+    height: 100vh;
+    background: url('/landing1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: fixed;
+}
+
+.home-form {
+    width: 520px;
+    height: 355px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 220px;
+    padding: 60px 30px 30px 30px;
+}
+
+form #input_value {
+    height: 50px;
+    width: 400px;
+    border: none;
+    border-radius: 3px;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #000000;
+}
+
+#btn {
+    height: 50px;
+    width: 50px;
+    background-color: #F7931F;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.logo {
+    width: 250px;
+    background: none;
+    position: relative;
+}
+
+h5 {
+    color: #ADB2C4!important;
+    text-align: center;
+    font-size: 18px!important;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    display: inline-block;
+    font-size: 12px!important;
+}
+
+.admin-login {
+    bottom: 20px;
+    right: 30px;
+    position: fixed;
+}
