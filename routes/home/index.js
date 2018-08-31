@@ -17,7 +17,7 @@ router.all('/*',(req,res,next)=>{
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render("asad");
+  res.send("asad");
 });
 
 
