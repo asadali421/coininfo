@@ -21,7 +21,7 @@ var app = express();
 
 //mongoose.connect('mongodb://localhost:27017/coindata',{useNewUrlParser:true}).then(db=>{
 
-mongoose.connect('mongodb://<asadali421>:<jinlian123>@ds247061.mlab.com:47061/coindata',{useNewUrlParser:true}).then(db=>{
+mongoose.connect('mongodb://asadali421:jinlian123@ds247061.mlab.com:47061/coindata',{useNewUrlParser:true}).then(db=>{
 
     console.log('connected');
 }).catch(err=>{
