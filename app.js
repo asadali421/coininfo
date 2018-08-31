@@ -58,10 +58,10 @@ app.use((req,res,next)=>{
 
 });
 
-app.use(express.static(path.join(__dirname+ '/public')));
-app.use(express.static(path.join(__dirname, 'public/images')));
-app.use('/admin/edit',express.static(path.join(__dirname+ '/public')));
-app.use('/admin/coins',express.static(path.join(__dirname+ '/public')));
+app.use(express.static(path.join(__dirname+ './public')));
+app.use(express.static(path.join(__dirname, './public/images')));
+app.use('/admin/edit',express.static(path.join(__dirname+ './public')));
+app.use('/admin/coins',express.static(path.join(__dirname+ './public')));
 
 app.use(methodoverride('_method'));
 
@@ -78,10 +78,10 @@ app.use(cookieParser());
 
 
 app.engine('handlebars',exphbs({
-    partialsDir: path.join(__dirname, 'views/partials'),
-    layoutsDir: path.join(__dirname, 'views/layouts')}));
+    partialsDir: path.join(__dirname, './views/partials'),
+    layoutsDir: path.join(__dirname, './views/layouts')}));
 app.set('view engine', 'handlebars');
-app.set('views',path.join(__dirname,'views'));
+app.set('views',path.join(__dirname,'./views'));
 
 var port = process.env.PORT || 3000;
 
