@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0d6082b-584c-439e-9729-0db005b3bb3a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/views/Partials/home/footer.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/Partials/home/footeres.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Partials/home/header.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/Partials/home/headeres.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home/coin.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/home/coin.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home/listing.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/home/listing.handlebars" afterDir="false" />
-    </list>
+    <list default="true" id="d0d6082b-584c-439e-9729-0db005b3bb3a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -58,8 +53,8 @@
       <file leaf-file-name="reset.handlebars" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/home/reset.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="306">
+              <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -322,12 +317,12 @@
       <option name="presentableId" value="Default" />
       <updated>1535208094518</updated>
       <workItem from="1535208096996" duration="4218000" />
-      <workItem from="1535258477537" duration="72018000" />
+      <workItem from="1535258477537" duration="73165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76236000" />
+    <option name="totallyTimeSpent" value="77383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -701,8 +696,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/home/reset.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="306">
+          <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
         </state>
       </provider>
     </entry>
